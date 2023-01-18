@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>로그인 폼</title>
+</head>
+<body>
+<h2>로그인 폼</h2>
+<hr>
+<form name="fo" method="get">
+	사용자 ID : <input type="text" size="15" value=""><br>
+	비밀 번호 : <input type="passward" size="15" value="">
+			   <input type="submit" value="완료">
+</form>
+<br>
+<h2>자기소개서 작성</h2>
+<hr>
+<form>
+	이름 : <input type="text" value=""><br>
+	암호 : <input type="passward" value="" maxlength="4"><br>
+	자소서 : <textarea cols="20" rows="5">이곳에 자기소개서 작성</textarea>
+			<input type="submit"value="제출">
+</form>
+<br>
+<h2>데이터 목록</h2>
+<hr>
+<form>
+나라 : <input type="text" list="countries"><br>
+<datalist id="countries">
+	<option value="가나">
+	<option value="스위스">
+	<option value="브라질">	
+</datalist>
+보고싶은것 : <input type="text" list="what">
+<datalist id="what">
+	<option value="산">
+	<option value="바다">
+	<option value="도시">
+</datalist>
+</form>
+<br>
+<h2>여러가지 버튼</h2>
+<hr>
+<form>
+	검색 : <input type="text" size="10" value="">
+		   <input type="button" value="Q1">
+		   <button type="button">Q2</button><br>
+	submit 버튼 : <input type="submit" value="전송"><br>
+	reset 버튼 : <input type="reset" value="리셋"><br>
+	이미지 버튼 : <input type="image" src=" boutton.png" alt="이미지버튼">
+
+</form>
+<br>
+<h2>체크 박스 만들기</h2>
+<hr>
+<form>
+	짜장면 : <input type="checkbox" value="1">
+	짬뽕 :  <input type="checkbox" value="2" checked><!-- checked속성 사용시 선택되어서 출력 -->
+	탕수육 : <input type="checkbox" value="3">
+</form>
+<br>
+<h2>라디오 버튼 만들기</h2>
+<hr>
+<form>
+	<input type="radio" name="china" value="1">
+	짜장면 <br>
+	<input type="radio" name="china" value="2" checked><!--checked속성 사용시 선택되어서 출력-->
+	짬뽕 <br>
+	<input type="radio" name="china" value="3">
+	탕수육 <br>
+</form>
+<br>
+<h2>콤보박스 만들기</h2>
+<hr>
+<form>
+	<select>
+		<option value="1">짜장면</option>
+		<option value="2" selected>탕수육</option> <!-- selected속성 사용시 선택되어서 출력 -->
+		<option value="3">짬뽕</option>
+	</select>
+</form>
+
+</body>
+</html>
